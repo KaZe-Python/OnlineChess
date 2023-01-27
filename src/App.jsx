@@ -14,8 +14,8 @@ function App() {
 
 
   return (
-    <div className="flex text-slate-200 justify-center items-center h-screen">
-      <div className="flex flex-col">
+    <div className="flex text-slate-200 justify-center items-center h-full">
+      <div>
         <Button name="New Game (Online)" click={handleOnlineGame} />
         <Button name="New Game (CPU)" click={handleCPUGame} />
       </div>

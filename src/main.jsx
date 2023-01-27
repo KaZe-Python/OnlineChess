@@ -10,13 +10,18 @@ import './index.css'
 import ErrorPage from './utils/error-page';
 import OnlineGame from './pages/OnlineGame';
 import CPUGame from './pages/CPUGame';
+import Root from './root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/",
+        element: <App />
+      },
       {
         path: "/o/:id",
         element: <OnlineGame />
